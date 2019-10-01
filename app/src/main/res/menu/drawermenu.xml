@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Aggiungo tutte le opzioni nel menu da qui-->
+    <!-- Importare le nuove icone cliccando su DRAWABLE->NEW->VECTOR ASSET->e icona -->
+<item android:id="@+id/db" android:title="Dashboard" android:icon="@drawable/ic_dashboard"/>
+    <item android:id="@+id/event" android:title="Eventi" android:icon="@drawable/ic_calendar"/>
+    <item android:id="@+id/search" android:title="Cerca" android:icon="@drawable/ic_searching_magnifying_glass"/>
+    <item android:id="@+id/settings" android:title="Opzioni" android:icon="@drawable/ic_settings_gears"/>
+    <item android:id="@+id/logout" android:title="Log Out" android:icon="@drawable/ic_logout"/>
+</menu>
