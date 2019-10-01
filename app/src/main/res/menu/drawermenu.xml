@@ -3,9 +3,9 @@
 
     <!-- Aggiungo tutte le opzioni nel menu da qui-->
     <!-- Importare le nuove icone cliccando su DRAWABLE->NEW->VECTOR ASSET->e icona -->
-<item android:id="@+id/db" android:title="Dashboard" android:icon="@drawable/ic_dashboard"/>
-    <item android:id="@+id/event" android:title="Eventi" android:icon="@drawable/ic_calendar"/>
-    <item android:id="@+id/search" android:title="Cerca" android:icon="@drawable/ic_searching_magnifying_glass"/>
-    <item android:id="@+id/settings" android:title="Opzioni" android:icon="@drawable/ic_settings_gears"/>
-    <item android:id="@+id/logout" android:title="Log Out" android:icon="@drawable/ic_logout"/>
+<item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_dashboard"/>
+    <item android:id="@+id/esplora" android:title="Esplora" android:icon="@drawable/ic_searching_magnifying_glass"/>
+    <item android:id="@+id/diari" android:title="Diari" android:icon="@drawable/ic_agenda_drawer"/>
+    <item android:id="@+id/coupon" android:title="Coupon" android:icon="@drawable/ic_voucher_drawer"/>
+    <item android:id="@+id/profilo" android:title="Profilo" android:icon="@drawable/ic_user_drawer"/>
 </menu>
