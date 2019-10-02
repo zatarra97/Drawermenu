@@ -16,7 +16,7 @@
     </FrameLayout>
     <!-- Qui decido colori, grandezza e da quale file prendere
     lo stile del menu laterale "drawmenu.xml"
-    il disegno del menu invece dal file header.xml -->
+    il disegno del menu invece dal file header.xml      g -->
 
     <android.support.design.widget.NavigationView
         app:headerLayout="@layout/header"

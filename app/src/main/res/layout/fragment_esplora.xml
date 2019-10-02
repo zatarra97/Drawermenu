@@ -3,13 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Esplora">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Esplora"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    >
+    
+    <RelativeLayout
+        android:weigth="2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Esplora fragment"
-        android:textSize="36sp" />
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="Esplora fragment"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp" />
+
+
+
+
+    </RelativeLayout>
+    
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight ="8"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        ></GridLayout>
+<!--ROW 1 -->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        ></android.support.v7.widget.CardView>
+
+
+
 
 </FrameLayout>
