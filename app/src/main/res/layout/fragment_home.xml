@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Home"
+    android:background="@drawable/bakground">
 
     <View
         android:layout_width="match_parent"
@@ -14,10 +15,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_presentazione"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Benvenuto nell' App \nTour di Bari"
+        android:textSize="30dp" />
+
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="366dp"
+        android:layout_height="370dp"
         android:layout_marginTop="350dp"
         android:layout_marginBottom="60dp"
         android:alignmentMode="alignMargins"
@@ -55,6 +67,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/image_profilo"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/ic_card_student"
                     android:visibility="visible" />
@@ -63,7 +76,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Profilo"
-                    android:textSize="14sp"
+                    android:id="@+id/textProfilo"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -101,8 +115,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Diari"
-                    android:textSize="14sp"
+                    android:text="Esplora"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -140,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Diari"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -179,7 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Coupon"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
