@@ -3,52 +3,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Esplora"
     android:orientation="vertical"
-    android:background="@drawable/bg"
 
     >
-    
-    <RelativeLayout
-        android:weigth="2"
-        android:layout_width="match_parent"
-        android:layout_height="70dp">
 
-        <TextView
-            android:id="@+id/textGrid"
-            android:text="Esplora fragment"
-            android:layout_centerInParent="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="36sp" />
-
-
-
-
-    </RelativeLayout>
-    
     <GridLayout
-        android:columnCount="2"
-        android:rowCount="3"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight ="8"
-        android:alignmentMode="alignMargins"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
         android:columnOrderPreserved="false"
         android:padding="14dp"
-        ></GridLayout>
-<!--ROW 1 -->
-    <android.support.v7.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="0dp"
-        app:cardCornerRadius="8dp"
-        ></android.support.v7.widget.CardView>
+
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="0dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            app:cardBackgroundColor="#EBF055"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tw_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="  INTERESSI CULTURALI"
+                    android:textAlignment="center"
+                    android:textColor="#081231"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Parti alla scoperta dei più bei monumenti della città, musei, chiese e molto altro ancora!"
+                    android:textAlignment="center"
+                    android:textColor="#081231"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:visibility="visible"
+            app:cardBackgroundColor="#6FBBFA"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="I MIEI DIARI"
+                    android:textAlignment="center"
+                    android:textColor="#081231"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Scatta e raccogli qui meravigliose fotografie della città"
+                    android:textAlignment="center"
+                    android:textColor="#081231"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- 2 rigo -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            app:cardBackgroundColor="#F75454"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="I MIEI COUPON"
+                    android:textAlignment="center"
+                    android:textColor="#4E1616"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="Scopri tutti i vantaggi e promozioni disponibili oggi!"
+                    android:textAlignment="center"
+                    android:textColor="#4E1616"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
 
 
 
